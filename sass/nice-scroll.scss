@@ -1037,3 +1037,9 @@ section:nth-child(6) {
     --image: url("https://assets.codepen.io/197359/flower-purple.png");
     --margin-top: 10dvi;
 }
+
+section:nth-child(7) {
+    --color-highlight: var(--color-red);
+    --color-selector: var(--color-green-2);
+    --image: url("https://assets.codepen.io/197359/flower-red.png");
+}
