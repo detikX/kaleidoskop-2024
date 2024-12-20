@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="sass/style.css">
     </head>
     <body>
-        <header class="site-header">
+        <header class="site-header" hidden>
             <h1 class="sr-only">Scrollnapping animations</h1>
             <!-- Because Chrome crashes if an overflow is set on the fieldset while a named timeline is on a child element -->
             <!-- ¯\_(ツ)_/¯ -->
@@ -80,6 +80,11 @@
                             <span class="sr-only">Caveats</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="#lala">
+                            <span class="sr-only">lala</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -88,7 +93,7 @@
                 <div class="content">
                     <h2>
                         <strong>Prabowo-Gibran</strong>
-                        terpilih jadi Presiden-wapres
+                        sebagai Presiden dan Wakil Presiden Terpilih
                     </h2>
                     <div class="text">
                         <img src="https://assets.codepen.io/197359/flower-white.png" alt="">
@@ -202,6 +207,32 @@
                 <div class="content">
                     <h2>
                         <strong>Caveats</strong>
+                    </h2>
+                    <div class="text">
+                        <img src="https://assets.codepen.io/197359/flower-purple.png" alt="">
+                        <ul>
+                            <li>Scrolling animations are not currently available in Firefox. This demo is using a polyfill.</li>
+                            <li>
+                                This layout is fragile due to the use of
+                                <code class="property">position: fixed</code>
+                                . You need to carefully manage stacking contexts.
+                            </li>
+                            <li>Snapping points have their own caveats, such as content taller than the viewport becoming inaccessible, along with the general annoyance of scrolljacking.</li>
+                            <li>
+                                The
+                                <code class="selector">blink</code>
+                                effect uses the
+                                <code class="property">contrast()</code>
+                                filter, which modifies the colors of the entire section. Thus, the background is set to black (or white), ensuring that it appears unchanged during transitions due to already being at maximum contrast.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="lala" class="section">
+                <div class="content">
+                    <h2>
+                        <strong>lala</strong>
                     </h2>
                     <div class="text">
                         <img src="https://assets.codepen.io/197359/flower-purple.png" alt="">
